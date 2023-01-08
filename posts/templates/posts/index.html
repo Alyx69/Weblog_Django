@@ -1,0 +1,11 @@
+{% extends 'posts/layout.html' %}
+
+{% block content %}
+<br>
+<ul class="list-group">
+    {% for post in posts %}
+        <li class="list-group-item list-group-item-action list-group-item-primary"><a style="text-decoration:none" href="/posts/details/{{post.id}}">{{post.title}}</a></li>
+    <br>
+    {% endfor %}
+</ul>
+{% endblock %}
